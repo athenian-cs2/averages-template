@@ -1,13 +1,22 @@
 public class MyMain {
 
-    // Shuffles an array, using the perfect shuffle algorithm
-    public static int[] perfectShuffle(int[] arr) { 
-        return null;
+    // Returns the mean of the 2D array mat
+    public static double mean(double[][] mat) { 
+        // YOUR CODE HERE
+        return -1.0;
     }
 
-    // Shuffles an array, using the selection shuffle algorithm
-    public static int[] selectionShuffle(int[] arr) { 
-        return null;
+    // Returns the median of the 2D array mat
+    public static double median(double[][] mat) { 
+        // YOUR CODE HERE
+        return -1.0;
+    }
+    
+
+    // Returns the mode of the 2D array mat
+    public static double mode(double[][] mat) { 
+        // YOUR CODE HERE
+        return -1.0;
     }
 
 

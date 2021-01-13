@@ -1,42 +1,64 @@
-# Shuffle
+# Averages
 
-In this assignment, you'll be writing two different methods to shuffle. (Shuffling will be very useful for any card games that we'd want to code, such as the Elevens game). To keeps things a bit simpler, we'll just be shuffling **arrays of integers** for this assignment. 
+In this assignment, you'll be writing three different methods to practice working with 2D arrays. 
 
-[1] The first method is **perfectShuffle()**. This method takes an int array as input (the unshuffled array) and returns another int array (the shuffled array). A "perfect shuffle" of a deck of cards is when a deck is split in half and the two half-decks are perfectly interwoven as shown below:
+For this assignment, you should assume that the 2D arrays are "sorted" 2D (that is, each individual row is in increasing order, and lower rows contain higher values than upper rows). Look at the arrays in the example below for clarification.
+```shell script
+double[][] m1 = {
+    {1,  2,  4,  6},
+    {7,  9,  10, 12},
+    {14, 15, 17, 18},
+    {22, 23, 27, 30}
+};
 
-![Image of Shuffle](shuffle.jpg)
+double[][] m2 = {
+    {1,  2,  4,  5,  6},
+    {7,  9,  10, 12, 13},
+    {14, 15, 17, 18, 20},
+    {22, 23, 27, 30, 32},
+    {33, 37, 38, 42, 44}
+};
 
-The perfectShuffle() method should shuffle an int array in the same way. For instance, consider the following int array before and after shuffling.
+double[][] m3 = { 
+    {1,  3,  4,  5},
+    {7,  9,  10, 12},
+    {14, 15, 17, 18} 
+};
 
-Before shuffling: [1, 2, 3, 4, 5, 21, 22, 23, 24, 25]
+double[][] m4 = {
+    {1,  2,  2,  2,  6},
+    {7,  9,  10, 11, 11},
+    {11, 11, 17, 18, 20}
+};
+```
 
-After shuffliing: [1, 21, 2, 22, 3, 23, 4, 24, 5, 25]
+You will be writing methods to find different types of "averages" of the array. 
+
+[1] The first method is **mean()**. This method takes a 2D double array as input and returns the mean average of the 2D array. As a reminder, the mean is where you add up all the numbers and then divide by the number of numbers. 
 
 The method should have the following signature:
 ```shell script
-public static int[] perfectShuffle(int[] arr) { }
+public static double mean(double[][] mat) { }
 ```
 <br />
 
-[2] The second method is selectionShuffle(). This method takes an int array as input (the unshuffled array) and returns another int array (the shuffled array). Unlike perfect shuffle, selection shuffle works by incorporating randomness. The general code outline for selection shuffle is shown below:
-
-* Loop through the array of integers
-  * Swap each integer with another integer located at some random index of the array
-
+[2] The second method is **median()**. This method takes a 2D double array as input and returns the median of the 2D array. As a reminder, the median is "middle" number of a set of numbers. 
 
 The method should have the following signature:
 ```shell script
-public static int[] selectionShuffle(int[] arr) { }
+public static double median(double[][] mat) { }
 ```
 
 <br />
 
-[3] Finally, write some code in the main method to test your methods. 
+[3] The third method is **mode()**. This method takes a 2D double array as input and returns the mode of the 2D array. As a reminder, the mode is the value that occurs the most often. You can assume that there won't be a tie.  
+
+The method should have the following signature:
+```shell script
+public static double mode(double[][] mat) { }
+```
 
 <br />
-<br />
-
-Add code to [MyMain.java](src/main/java/MyMain.java) to do the desired thing.
 
 ## Run your code with:
 ```shell script
